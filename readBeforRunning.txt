@@ -1,0 +1,5 @@
+Before running this program, don't forget to run the following from the command prompt after navigating to the program folder:
+
+>npm init -y
+>npm install express --save
+>npm install express-handlebars --save
