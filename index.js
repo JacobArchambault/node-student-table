@@ -18,7 +18,7 @@ app.get('/students', (_req, res) => res.render('students', {
    ]
 }));
 
-app.get('/', (_req, res) => res.render('hello', { name: "Joan" }));
+app.get('/', (_req, res) => res.render('hello', { name: "Jacob" }));
 
 app.use((_req, res) => res.status(404).send("Sorry, no such page!"));
 
