@@ -1,12 +1,12 @@
 // the app
 var express = require('express');
+var exphbs = require('express-handlebars');
 var app = express();
 
-var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-app.use(express.static('public'));  // this allows us to get our screem image
+app.use(express.static('public'));  // this allows us to get our scream image
 
 app.get('/students', (_req, res) => res.render('students', {
    classData: [
