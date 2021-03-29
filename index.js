@@ -1,6 +1,5 @@
 // the app
 var express = require('express');
-var path = require('path');
 var app = express();
 
 var exphbs = require('express-handlebars');
