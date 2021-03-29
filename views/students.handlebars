@@ -1,15 +1,19 @@
 <h3>Student Info</h3>
 <table class="table">
-   <tr>
-      <th>Name</th>
-      <th>Midterm</th>
-      <th>Final</th>
-   </tr>
-   {{#each classData}}
-   <tr>
-      <td>{{name}}</td>
-      <td>{{midterm}}</td>
-      <td>{{final}}</td>
-   </tr>
-   {{/each}}
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Midterm</th>
+         <th>Final</th>
+      </tr>
+   </thead>
+   <tbody>
+      {{#each classData}}
+      <tr>
+         <td>{{name}}</td>
+         <td>{{midterm}}</td>
+         <td>{{final}}</td>
+      </tr>
+      {{/each}}
+   </tbody>
 </table>
